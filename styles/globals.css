@@ -1,17 +1,94 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/* @tailwind base; */
+/* @tailwind components; */
+/* @tailwind utilities; */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
 
 html,
 body,
-#__root {
+#__next,
+.app {
   height: 100%;
 }
 
 body {
-  /* font-family: "Open Sans", Segoe UI, Tahoma, sans-serif; */
+  font-family: "Open Sans", Segoe UI, Tahoma, sans-serif;
+  font-size: 16px;
+  /* line-height: 1em; */
 }
 
 b {
   font-weight: 500;
+}
+
+.app {
+  background: #f1f1f1;
+  display: flex;
+  flex-direction: column;
+}
+
+.app__nav {
+  background: #fff;
+  height: 48px;
+  padding: 0 16px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.app__nav nav {
+  margin-left: auto;
+}
+
+.app__header {
+  height: 48px;
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+}
+
+.app__title {
+}
+
+.app__wrapper {
+  display: flex;
+  padding: 8px;
+}
+
+.app__sidebar {
+  overflow-y: auto;
+  width: 250px;
+}
+
+.app__container {
+  flex-grow: 1;
+  overflow-y: auto;
+}
+
+.panel {
+  background: #fff;
+  padding: 16px;
+  margin: 8px;
+}
+
+.form-label {
+}
+
+.form-input {
+}
+
+.form-input:focus {
+}
+
+.btn {
+  font-size: 16px;
+  display: inline-block;
+  border: 0;
+  background: #f00;
+  padding: 10px;
 }
